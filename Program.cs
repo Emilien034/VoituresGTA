@@ -17,6 +17,29 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        string[] cars = { "Banshee", "Zentorno", "Sultan", "Sanchez", "Buzzard" };
+
+        Console.WriteLine("Voici les voitures:\n");
+
+        void carsStock()
+        {
+            for (int i = 0; i < cars.Length; i++)
+            {
+                Console.WriteLine($"Voiture {i + 1}: {cars[i]}.");
+            }
+        }
+
+        carsStock();
+
+        Console.Write("\nQuelle voiture souhaîte-tu remplacer? (1 à 5): ");
+        int carReplace = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Et quel est le nom du nouveau véhicule? \n");
+        string carName = Convert.ToString(Console.ReadLine());
+
+        //int replacementIndex = System.Array.IndexOf(cars, carReplace);
+
+        cars[carReplace - 1] = carName;
+
+        carsStock();
     }
 }
