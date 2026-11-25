@@ -33,7 +33,7 @@ class Program
 
         Console.Write("\nQuelle voiture souhaîte-tu remplacer? (1 à 5): ");
         int carReplace = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Et quel est le nom du nouveau véhicule? \n");
+        Console.Write("Et quel est le nom du nouveau véhicule? ");
         string carName = Convert.ToString(Console.ReadLine());
 
         //int replacementIndex = System.Array.IndexOf(cars, carReplace);
